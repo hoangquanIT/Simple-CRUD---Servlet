@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add employee</title>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.mainContent{
+		width: 500px;
+		margin: auto;
+		margin-top: 100px;
+		font-size: 18px;
+	}
+	h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	a{
+		text-decoration: none;
+	}
+	button:hover{
+		cursor: pointer;
+	}
+	.view-btn{
+		width: 200px;
+		height: 30px;
+		font-size: 16px;
+	}
+	table input{
+		width: 300px;
+		font-size: 18px;
+		padding: 2px;
+	}
+	table select{
+		font-size: 18px;
+	}
+	table td{
+		padding: 5px;
+	}
+	.general-btn{
+		width: 60px;
+		height: 30px;
+		font-size: 16px;
+	}
+</style>
+</head>
+<body>
+<div class="mainContent">
+	<a href="ViewEmp?page=1"><button class="view-btn">View all employees</button></a>
+	<h1>Add new employee</h1>
+	<form action="AddEmp" method="post">
+		<table>
+			<tr>
+				<td><label for="name">Name: </label></td>
+				<td><input type="text" name="name" id="name"></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password: </label></td>
+				<td><input type="password" name="pass" id="pass"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email: </label></td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td>
+					<select name="country">
+						<option value="Canada">Canada</option>
+						<option value="France">France</option>
+						<option value="German">German</option>
+						<option value="USA">USA</option>
+						<option value="VietNam">VietNam</option>
+					</select>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+					<button type="submit" class="general-btn">Add</button>
+					<a href="home.html"><button type="button" class="general-btn">Back</button></a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>
